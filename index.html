@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend 3 Contest 2</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Weather App</h1>
+    <button class="fetch-btn" id="fetch-data-btn">Fetch Data</button>
+    <div class="coordinate hide" >
+        
+        
+    </div>
+    <div id="map" class="map hide"></div>
+
+    <div class="container hide">
+        
+    </div>
+    <script>
+        function myMap() {
+        var mapProp= {
+          center:new google.maps.LatLng(23.5143,87.3612),
+          zoom:5,
+        };
+        var map = new google.maps.Map(document.getElementById("map"),mapProp);
+        }
+        </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByfc2R-mHDM-AZKEIZP9ZcxaQYPGQI5lQ&callback=myMap"></script>
+
+    <script src="./script.js"></script>
+</body>
+</html>
